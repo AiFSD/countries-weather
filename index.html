@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Weather App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .card-img-top {
+        height: 150px;
+        object-fit: cover;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container mt-4">
+        <h1 id="title" class="text-center">Country Weather Information</h1>
+
+        <div class="row" id="country-cards">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/150"
+                class="card-img-top"
+                alt="Country Flag"
+              />
+              <div class="card-header">Country Name</div>
+              <div class="card-body">
+                <p><strong>Capital:</strong> Example Capital</p>
+                <p><strong>Region:</strong> Example Region</p>
+                <p><strong>Native Name:</strong> Example Native Name</p>
+                <p><strong>Population:</strong> Example Population</p>
+                <button
+                  class="btn btn-primary"
+                  onclick="fetchWeather('Example Capital')"
+                >
+                  Click for Weather
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
